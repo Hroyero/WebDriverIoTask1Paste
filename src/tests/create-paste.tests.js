@@ -1,7 +1,7 @@
-const PastePage = require('../po/pages/paste.page');
+//const PastePage = require('../po/pages/paste.page');
 const PastebinPage = require('../po/pages/pastebin.page');
 const pastebinPage = new PastebinPage();
-const pastePage = new PastePage();
+//const pastePage = new PastePage();
 
 
 
@@ -20,10 +20,10 @@ describe('Pastebin page', () =>{
         await pastebinPage.newPaste.setPasteName('helloweb');
         await pastebinPage.newPaste.createPaste();
 
-        /*
-        const pasteContent = await pastePage.getPasteContent();
-        expect(pasteContent).toHaveText('Hello from WebDriver');
-        */
+        
+       // const pasteContent = await pastePage.getPasteContent();
+       // expect(pasteContent).toHaveText('Hello from WebDriver');
+        
         
     });
 });
